@@ -1,0 +1,14 @@
+<ion-item *ngIf="account" [routerLink]="'/product/' + account.id" [detail]="false" xmlns="http://www.w3.org/1999/html">
+  <ion-label class="ion-text-wrap">
+    <h1>
+      {{ account.platform }}
+      <span class="date">
+        <ion-note>{{ 'User: ' + account.username }}</ion-note>
+      </span>
+      <br>
+      <span class="date">
+        <ion-note>{{ 'Password: ' + account.password }}</ion-note>
+      </span>
+    </h1>
+  </ion-label>
+</ion-item>
